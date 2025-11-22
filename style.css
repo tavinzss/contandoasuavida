@@ -118,6 +118,17 @@ body {
     pointer-events: none;
 }
 
+/* Footer autor */
+.footer{
+  position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);
+  background: rgba(0,0,0,.35);
+  border: 1px solid var(--card-border);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px; color: var(--muted);
+  backdrop-filter: blur(6px);
+}
+
 .heart-fall {
     position: absolute;
     color: #ff3366;
