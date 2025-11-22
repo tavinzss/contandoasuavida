@@ -1,0 +1,135 @@
+/* Fundo romântico */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ff9eb5, #ffd6e3);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Área central */
+.container {
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Botão da música */
+.music-btn {
+    background: #ff4f88;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px auto 10px;
+    display: block;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    background: #ff1f6a;
+}
+
+/* Carrossel adaptável sem bordas */
+.carousel {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+    background: #000;
+}
+
+.carousel img,
+.carousel video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.carousel .active {
+    opacity: 1;
+}
+
+/* Título */
+.romantic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin-top: 20px;
+    color: #b30047;
+}
+
+/* Contador */
+#contador {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #8c0031;
+}
+
+/* Coração */
+.heart {
+    font-size: 40px;
+    margin: 15px 0 5px;
+}
+
+/* Linha */
+.line {
+    width: 60%;
+    border: none;
+    height: 2px;
+    background: #777;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+/* Textos românticos */
+.love-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b30047;
+}
+
+.love-paragraph {
+    font-size: 18px;
+    color: #5a003a;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Corações caindo */
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart-fall {
+    position: absolute;
+    color: #ff3366;
+    font-size: 18px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
